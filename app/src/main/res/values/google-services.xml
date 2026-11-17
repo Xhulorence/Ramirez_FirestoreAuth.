@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">34508745154</string>
+    <string name="google_app_id" translatable="false">1:34508745154:android:90a1fd592cb388ca65ce5b</string>
+    <string name="google_api_key" translatable="false">AIzaSyCvChviTGeJS1CkveROkcHctmb_Cdmp7wk</string>
+    <string name="project_id" translatable="false">devotional-3cee0</string>
+</resources>

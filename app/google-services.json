@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34508745154",
+    "project_id": "devotional-3cee0",
+    "storage_bucket": "devotional-3cee0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34508745154:android:90a1fd592cb388ca65ce5b",
+        "android_client_info": {
+          "package_name": "com.school.devotional"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvChviTGeJS1CkveROkcHctmb_Cdmp7wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

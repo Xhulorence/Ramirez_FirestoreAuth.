@@ -12,12 +12,14 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
+        MaterialButton btnBackTopLeft = findViewById(R.id.btnBackThirdTopLeft);
+        if (btnBackTopLeft != null) {
+            btnBackTopLeft.setOnClickListener(v -> finish());
+        }
+
         MaterialButton btnBack = findViewById(R.id.btnBackThird);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        if (btnBack != null) {
+            btnBack.setOnClickListener(v -> finish());
+        }
     }
 }

@@ -7,23 +7,39 @@
     android:background="@drawable/bg_gradient"
     tools:context=".ThirdActivity">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackThirdTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="← Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#D32F2F"
+        app:cornerRadius="20dp"
+        app:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/Logo"
         android:layout_width="57dp"
         android:layout_height="51dp"
-        android:layout_marginStart="336dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="Logo"
         android:src="@drawable/logo3"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-condensed"
         android:text="Holy Bible"
         android:textColor="#F3B21B"
@@ -40,7 +56,7 @@
         android:fontFamily="sans-serif-condensed"
         android:text="Select a Book to Read"
         android:textColor="#0AAB5E"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvHeader" />
@@ -48,102 +64,281 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/btnBackThird"
         app:layout_constraintTop_toBottomOf="@id/tvSubHeader">
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alignmentMode="alignMargins"
-            android:columnCount="2"
-            android:padding="16dp"
-            android:rowCount="3">
+            android:orientation="vertical"
+            android:padding="8dp">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:text="Genesis"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="#0AAB5E"
-                app:cornerRadius="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="OLD TESTAMENT"
+                android:textColor="#244936"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:text="Exodus"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="#0AAB5E"
-                app:cornerRadius="16dp" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:padding="8dp">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:text="Leviticus"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="#0AAB5E"
-                app:cornerRadius="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Genesis"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:text="Numbers"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="#0AAB5E"
-                app:cornerRadius="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Exodus"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:text="Deuteronomy"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="#0AAB5E"
-                app:cornerRadius="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Leviticus"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:text="Joshua"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="#0AAB5E"
-                app:cornerRadius="16dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Numbers"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
 
-        </GridLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Deuteronomy"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Joshua"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Judges"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Ruth"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Psalms"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Proverbs"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Isaiah"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Daniel"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="NEW TESTAMENT"
+                android:textColor="#244936"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:padding="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Matthew"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Mark"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Luke"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="John"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Acts"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Romans"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Galatians"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:text="Revelation"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="#0AAB5E"
+                    app:cornerRadius="14dp" />
+
+            </GridLayout>
+        </LinearLayout>
     </ScrollView>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnBackThird"
-        android:layout_width="180dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="30dp"
-        android:text="Back"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:backgroundTint="#D32F2F"
-        app:cornerRadius="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
